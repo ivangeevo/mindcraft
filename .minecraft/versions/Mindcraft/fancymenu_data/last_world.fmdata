@@ -1,0 +1,7 @@
+type = last_world
+
+last_world {
+  is_server = false
+  world = C:/Users/billi/AppData/Roaming/.minecraft/versions/Mindcraft/saves/New World
+}
+

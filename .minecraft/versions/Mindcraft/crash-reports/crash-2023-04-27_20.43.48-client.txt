@@ -1,0 +1,224 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 27/04/2023, 20:43
+Description: Unexpected error
+
+java.lang.NullPointerException: Cannot invoke "ru.hollowhorizon.fancychunks.ext.ChunkShaderInterfaceExt.setFadeDatas(me.jellysquid.mods.sodium.client.gl.buffer.GlMutableBuffer)" because "shader" is null
+	at ru.hollowhorizon.fancychunks.ext.ChunkFadeInController.updateChunksFade(ChunkFadeInController.java:43) ~[fancychunks-1.0.jar%2376!/:1.0] {re:mixin,re:classloading}
+	at me.jellysquid.mods.sodium.client.render.chunk.region.RenderRegion.updateChunksFade(RenderRegion.java:540) ~[rubidium-0.5.6.jar%23102!/:?] {re:mixin,re:classloading,pl:mixin:APP:fancychunks.mixins.json:RenderRegionMixin,pl:mixin:A}
+	at me.jellysquid.mods.sodium.client.render.chunk.RegionChunkRenderer.handler$zce000$modifyChunkRender(RegionChunkRenderer.java:529) ~[rubidium-0.5.6.jar%23102!/:?] {re:mixin,re:classloading,pl:mixin:APP:fancychunks.mixins.json:RegionChunkRendererMixin,pl:mixin:APP:mixins.oculus.compat.sodium.json:shader_overrides.MixinRegionChunkRenderer,pl:mixin:APP:mixins.oculus.compat.sodium.json:shadow_map.MixinRegionChunkRenderer,pl:mixin:APP:mixins.oculus.compat.sodium.json:vertex_format.MixinRegionChunkRenderer,pl:mixin:A}
+	at me.jellysquid.mods.sodium.client.render.chunk.RegionChunkRenderer.render(RegionChunkRenderer.java:86) ~[rubidium-0.5.6.jar%23102!/:?] {re:mixin,re:classloading,pl:mixin:APP:fancychunks.mixins.json:RegionChunkRendererMixin,pl:mixin:APP:mixins.oculus.compat.sodium.json:shader_overrides.MixinRegionChunkRenderer,pl:mixin:APP:mixins.oculus.compat.sodium.json:shadow_map.MixinRegionChunkRenderer,pl:mixin:APP:mixins.oculus.compat.sodium.json:vertex_format.MixinRegionChunkRenderer,pl:mixin:A}
+	at me.jellysquid.mods.sodium.client.render.chunk.RenderSectionManager.renderLayer(RenderSectionManager.java:298) ~[rubidium-0.5.6.jar%23102!/:?] {re:mixin,re:classloading,pl:mixin:APP:mixins.oculus.compat.sodium.json:options.MixinRenderSectionManager,pl:mixin:APP:mixins.oculus.compat.sodium.json:shadow_map.MixinRenderSectionManager,pl:mixin:APP:mixins.oculus.compat.sodium.json:vertex_format.MixinRenderSectionManager,pl:mixin:A}
+	at me.jellysquid.mods.sodium.client.render.SodiumWorldRenderer.drawChunkLayer(SodiumWorldRenderer.java:221) ~[rubidium-0.5.6.jar%23102!/:?] {re:mixin,re:classloading,pl:mixin:APP:rubidium_extras.mixins.json:fog.MixinSodiumWorldRenderer,pl:mixin:APP:mixins.oculus.compat.sodium.json:shadow_map.MixinSodiumWorldRenderer,pl:mixin:A}
+	at net.minecraft.client.renderer.LevelRenderer.m_172993_(LevelRenderer.java:7619) ~[client-1.18.2-20220404.173914-srg.jar%23117!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:twilightforest:render,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:twilightforest:render,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.LevelRenderer.m_109599_(LevelRenderer.java:1161) ~[client-1.18.2-20220404.173914-srg.jar%23117!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:twilightforest:render,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:twilightforest:render,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.GameRenderer.m_109089_(GameRenderer.java:1061) ~[client-1.18.2-20220404.173914-srg.jar%23117!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:cgm.mixins.json:client.GameRendererMixin,pl:mixin:APP:rubidium_extras.mixins.json:TotalDarkness.MixinGameRenderer,pl:mixin:APP:rubidium_extras.mixins.json:Zoom.GameRendererMixin,pl:mixin:APP:mixins.oculus.json:GameRendererAccessor,pl:mixin:APP:mixins.oculus.json:MixinGameRenderer,pl:mixin:APP:mixins.oculus.json:MixinModelViewBobbing,pl:mixin:APP:mixins.oculus.json:MixinTweakFarPlane,pl:mixin:APP:create.mixins.json:GameRendererMixin,pl:mixin:APP:create.mixins.json:accessor.GameRendererAccessor,pl:mixin:APP:mixins.oculus.json:MixinGameRenderer_NightVisionCompat,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.GameRenderer.m_109093_(GameRenderer.java:835) ~[client-1.18.2-20220404.173914-srg.jar%23117!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:cgm.mixins.json:client.GameRendererMixin,pl:mixin:APP:rubidium_extras.mixins.json:TotalDarkness.MixinGameRenderer,pl:mixin:APP:rubidium_extras.mixins.json:Zoom.GameRendererMixin,pl:mixin:APP:mixins.oculus.json:GameRendererAccessor,pl:mixin:APP:mixins.oculus.json:MixinGameRenderer,pl:mixin:APP:mixins.oculus.json:MixinModelViewBobbing,pl:mixin:APP:mixins.oculus.json:MixinTweakFarPlane,pl:mixin:APP:create.mixins.json:GameRendererMixin,pl:mixin:APP:create.mixins.json:accessor.GameRendererAccessor,pl:mixin:APP:mixins.oculus.json:MixinGameRenderer_NightVisionCompat,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91383_(Minecraft.java:1046) ~[client-1.18.2-20220404.173914-srg.jar%23117!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:dynamiclightsreforged.mixins.json:MinecraftClientMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:665) ~[client-1.18.2-20220404.173914-srg.jar%23117!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:dynamiclightsreforged.mixins.json:MinecraftClientMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:205) ~[client-1.18.2-20220404.173914-srg.jar%23117!/:?] {re:classloading,re:mixin,pl:runtimedistcleaner:A,pl:mixin:A,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$launchService$0(CommonClientLaunchHandler.java:31) ~[fmlloader-1.18.2-40.2.2.jar%2317!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:149) [bootstraplauncher-1.0.0.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at ru.hollowhorizon.fancychunks.ext.ChunkFadeInController.updateChunksFade(ChunkFadeInController.java:43) ~[fancychunks-1.0.jar%2376!/:1.0] {re:mixin,re:classloading}
+	at me.jellysquid.mods.sodium.client.render.chunk.region.RenderRegion.updateChunksFade(RenderRegion.java:540) ~[rubidium-0.5.6.jar%23102!/:?] {re:mixin,re:classloading,pl:mixin:APP:fancychunks.mixins.json:RenderRegionMixin,pl:mixin:A}
+	at me.jellysquid.mods.sodium.client.render.chunk.RegionChunkRenderer.handler$zce000$modifyChunkRender(RegionChunkRenderer.java:529) ~[rubidium-0.5.6.jar%23102!/:?] {re:mixin,re:classloading,pl:mixin:APP:fancychunks.mixins.json:RegionChunkRendererMixin,pl:mixin:APP:mixins.oculus.compat.sodium.json:shader_overrides.MixinRegionChunkRenderer,pl:mixin:APP:mixins.oculus.compat.sodium.json:shadow_map.MixinRegionChunkRenderer,pl:mixin:APP:mixins.oculus.compat.sodium.json:vertex_format.MixinRegionChunkRenderer,pl:mixin:A}
+	at me.jellysquid.mods.sodium.client.render.chunk.RegionChunkRenderer.render(RegionChunkRenderer.java:86) ~[rubidium-0.5.6.jar%23102!/:?] {re:mixin,re:classloading,pl:mixin:APP:fancychunks.mixins.json:RegionChunkRendererMixin,pl:mixin:APP:mixins.oculus.compat.sodium.json:shader_overrides.MixinRegionChunkRenderer,pl:mixin:APP:mixins.oculus.compat.sodium.json:shadow_map.MixinRegionChunkRenderer,pl:mixin:APP:mixins.oculus.compat.sodium.json:vertex_format.MixinRegionChunkRenderer,pl:mixin:A}
+	at me.jellysquid.mods.sodium.client.render.chunk.RenderSectionManager.renderLayer(RenderSectionManager.java:298) ~[rubidium-0.5.6.jar%23102!/:?] {re:mixin,re:classloading,pl:mixin:APP:mixins.oculus.compat.sodium.json:options.MixinRenderSectionManager,pl:mixin:APP:mixins.oculus.compat.sodium.json:shadow_map.MixinRenderSectionManager,pl:mixin:APP:mixins.oculus.compat.sodium.json:vertex_format.MixinRenderSectionManager,pl:mixin:A}
+	at me.jellysquid.mods.sodium.client.render.SodiumWorldRenderer.drawChunkLayer(SodiumWorldRenderer.java:221) ~[rubidium-0.5.6.jar%23102!/:?] {re:mixin,re:classloading,pl:mixin:APP:rubidium_extras.mixins.json:fog.MixinSodiumWorldRenderer,pl:mixin:APP:mixins.oculus.compat.sodium.json:shadow_map.MixinSodiumWorldRenderer,pl:mixin:A}
+	at net.minecraft.client.renderer.LevelRenderer.m_172993_(LevelRenderer.java:7619) ~[client-1.18.2-20220404.173914-srg.jar%23117!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:twilightforest:render,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:twilightforest:render,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.LevelRenderer.m_109599_(LevelRenderer.java:1161) ~[client-1.18.2-20220404.173914-srg.jar%23117!/:?] {re:mixin,pl:accesstransformer:B,xf:fml:twilightforest:render,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:twilightforest:render,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.renderer.GameRenderer.m_109089_(GameRenderer.java:1061) ~[client-1.18.2-20220404.173914-srg.jar%23117!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:cgm.mixins.json:client.GameRendererMixin,pl:mixin:APP:rubidium_extras.mixins.json:TotalDarkness.MixinGameRenderer,pl:mixin:APP:rubidium_extras.mixins.json:Zoom.GameRendererMixin,pl:mixin:APP:mixins.oculus.json:GameRendererAccessor,pl:mixin:APP:mixins.oculus.json:MixinGameRenderer,pl:mixin:APP:mixins.oculus.json:MixinModelViewBobbing,pl:mixin:APP:mixins.oculus.json:MixinTweakFarPlane,pl:mixin:APP:create.mixins.json:GameRendererMixin,pl:mixin:APP:create.mixins.json:accessor.GameRendererAccessor,pl:mixin:APP:mixins.oculus.json:MixinGameRenderer_NightVisionCompat,pl:mixin:A,pl:runtimedistcleaner:A}
+-- Affected level --
+Details:
+	All players: 1 total; [LocalPlayer['geevoplays'/87, l='ClientLevel', x=717.47, y=111.00, z=332.39]]
+	Chunk stats: 1024, 313
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (-32,77,48), Section: (at 0,13,0 in -2,4,3; chunk contains blocks -32,-64,48 to -17,319,63), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,-64,0 to -1,319,511)
+	Level time: 52484 game time, 63072 day time
+	Server brand: forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.ClientLevel.m_6026_(ClientLevel.java:407) ~[client-1.18.2-20220404.173914-srg.jar%23117!/:?] {re:mixin,xf:fml:xaerominimap:xaero_clientworldclass,pl:runtimedistcleaner:A,re:classloading,xf:fml:xaerominimap:xaero_clientworldclass,pl:mixin:APP:dynamiclightsreforged.mixins.json:ClientWorldMixin,pl:mixin:APP:rubidium.mixins.json:features.chunk_rendering.MixinClientWorld,pl:mixin:APP:rubidium.mixins.json:features.fast_biome_colors.MixinClientWorld,pl:mixin:APP:flywheel.mixins.json:ClientLevelMixin,pl:mixin:APP:mixins.oculus.vertexformat.json:block_rendering.MixinClientLevel,pl:mixin:APP:architectury.mixins.json:MixinClientLevel,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91354_(Minecraft.java:2264) ~[client-1.18.2-20220404.173914-srg.jar%23117!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:dynamiclightsreforged.mixins.json:MinecraftClientMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.m_91374_(Minecraft.java:687) ~[client-1.18.2-20220404.173914-srg.jar%23117!/:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:APP:dynamiclightsreforged.mixins.json:MinecraftClientMixin,pl:mixin:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:205) ~[client-1.18.2-20220404.173914-srg.jar%23117!/:?] {re:classloading,re:mixin,pl:runtimedistcleaner:A,pl:mixin:A,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$launchService$0(CommonClientLaunchHandler.java:31) ~[fmlloader-1.18.2-40.2.2.jar%2317!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-9.1.3.jar%235!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:149) [bootstraplauncher-1.0.0.jar:?] {}
+
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: Default, Mod Resources, Supplementaries Generated Pack
+
+-- System Details --
+Details:
+	Minecraft Version: 1.18.2
+	Minecraft Version ID: 1.18.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.1, Microsoft
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Microsoft
+	Memory: 676416208 bytes (645 MiB) / 3154116608 bytes (3008 MiB) up to 3154116608 bytes (3008 MiB)
+	CPUs: 4
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 3 2200G with Radeon Vega Graphics    
+	Identifier: AuthenticAMD Family 23 Model 17 Stepping 0
+	Microarchitecture: Zen
+	Frequency (GHz): 3.49
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 4
+	Graphics card #0 name: AMD Radeon(TM) Vega 8 Graphics
+	Graphics card #0 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #0 VRAM (MB): 2048.00
+	Graphics card #0 deviceId: 0x15dd
+	Graphics card #0 versionInfo: DriverVersion=31.0.14043.7000
+	Memory slot #0 capacity (MB): 4096.00
+	Memory slot #0 clockSpeed (GHz): 2.93
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 4096.00
+	Memory slot #1 clockSpeed (GHz): 2.93
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 14105.01
+	Virtual memory used (MB): 11919.32
+	Swap memory total (MB): 8038.27
+	Swap memory used (MB): 1086.93
+	JVM Flags: 9 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xss1M -Xmx3000M -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M
+	Loaded Shaderpack: Tea_V1.5.7.zip
+		Profile: Custom (+0 options changed by user)
+	Launched Version: The MindCraft Project v0.0.1
+	Backend library: LWJGL version 3.2.2 SNAPSHOT
+	Backend API: AMD Radeon(TM) Vega 8 Graphics GL version 3.2.0 Core Profile Context 23.4.1.230326, ATI Technologies Inc.
+	Window size: 1920x1080
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Type: Integrated Server (map_client.txt)
+	Graphics mode: fast
+	Resource Packs: 
+	Current Language: English (US)
+	CPU: 4x AMD Ryzen 3 2200G with Radeon Vega Graphics 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['geevoplays'/87, l='ServerLevel[New World]', x=717.47, y=111.00, z=332.39]]
+	Data Packs: vanilla, mod:dynamiclightsreforged (incompatible), mod:inventorysorter (incompatible), mod:cgm, mod:jei (incompatible), mod:sophisticatedcore (incompatible), mod:rubidium (incompatible), mod:rsgauges (incompatible), mod:clumps (incompatible), mod:citadel (incompatible), mod:alexsmobs (incompatible), mod:artifacts, mod:sereneseasons (incompatible), mod:additionalguns, mod:pyromancer, mod:fire_extinguisher, mod:sophisticatedbackpacks (incompatible), mod:mcjtylib (incompatible), mod:mcwdoors, mod:mekanismgenerators, mod:rubidium_extras (incompatible), mod:cloth_config (incompatible), mod:forge, mod:bloodmagic (incompatible), mod:twilightforest (incompatible), mod:tlskincape (incompatible), mod:selene (incompatible), mod:supplementaries (incompatible), mod:out_of_sight (incompatible), mod:industrialforegoing (incompatible), mod:farmersdelight (incompatible), mod:titanium (incompatible), mod:supermartijn642corelib, mod:simplylight, mod:botania (incompatible), mod:flywheel (incompatible), mod:create, mod:curios (incompatible), mod:mekanism, mod:patchouli (incompatible), mod:mantle (incompatible), mod:xaerominimap, mod:collective (incompatible), mod:cc (incompatible), mod:cfm, mod:engineersdecor (incompatible), mod:framework (incompatible), mod:expandability (incompatible), mod:deathchest (incompatible), mod:createaddition (incompatible), mod:sedna (incompatible), mod:markdown_manual (incompatible), mod:oc2 (incompatible), mod:architectury (incompatible), Supplementaries Generated Pack, mod:irisflw, mod:rftoolsbase (incompatible), mod:rftoolsbuilder (incompatible), mod:oculus (incompatible), mod:betterf3 (incompatible), mod:fancychunks, mod:crafttweaker (incompatible), mod:konkrete (incompatible), mod:tconstruct (incompatible)
+	World Generation: Experimental
+	ModLauncher: 9.1.3+9.1.3+main.9b69c82a
+	ModLauncher launch target: forgeclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		 mixin PLUGINSERVICE 
+		 eventbus PLUGINSERVICE 
+		 slf4jfixer PLUGINSERVICE 
+		 object_holder_definalize PLUGINSERVICE 
+		 runtime_enum_extender PLUGINSERVICE 
+		 capability_token_subclass PLUGINSERVICE 
+		 accesstransformer PLUGINSERVICE 
+		 runtimedistcleaner PLUGINSERVICE 
+		 mixin TRANSFORMATIONSERVICE 
+		 fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		dynamiclightsreforged-1.18.2_v1.3.3.jar           |Rubidium Dynamic Lights       |dynamiclightsreforged         |1.18.2_v1.3.3       |DONE      |Manifest: NOSIGNATURE
+		inventorysorter-1.18.2-19.0.4.jar                 |Simple Inventory Sorter       |inventorysorter               |19.0.4              |DONE      |Manifest: NOSIGNATURE
+		sedna-1.18.2-forge-1.0.14.jar                     |Sedna for Minecraft           |sedna                         |1.0.14              |DONE      |Manifest: NOSIGNATURE
+		cgm-1.3.3-1.18.2.jar                              |MrCrayfish's Gun Mod          |cgm                           |1.3.3               |DONE      |Manifest: NOSIGNATURE
+		oculus-flywheel-compat-1.18.2-0.1.8-BETA.jar      |Oculus Flywheel Compat        |irisflw                       |1.18.2-0.1.8-BETA   |DONE      |Manifest: NOSIGNATURE
+		fancychunks-1.0.jar                               |Fancy Chunks                  |fancychunks                   |1.0                 |DONE      |Manifest: NOSIGNATURE
+		jei-1.18.2-forge-10.2.1.1004.jar                  |Just Enough Items             |jei                           |10.2.1.1004         |DONE      |Manifest: NOSIGNATURE
+		sophisticatedcore-1.18.2-0.5.48.244.jar           |Sophisticated Core            |sophisticatedcore             |1.18.2-0.5.48.244   |DONE      |Manifest: NOSIGNATURE
+		rubidium-0.5.6.jar                                |Rubidium                      |rubidium                      |0.5.6               |DONE      |Manifest: NOSIGNATURE
+		rsgauges-1.18.2-1.2.16.jar                        |Gauges and Switches           |rsgauges                      |1.2.16              |DONE      |Manifest: bf:30:76:97:e4:58:41:61:2a:f4:30:d3:8f:4c:e3:71:1d:14:c4:a1:4e:85:36:e3:1d:aa:2f:cb:22:b0:04:9b
+		Clumps-forge-1.18.2-8.0.0+17.jar                  |Clumps                        |clumps                        |8.0.0+17            |DONE      |Manifest: NOSIGNATURE
+		citadel-1.11.3-1.18.2.jar                         |Citadel                       |citadel                       |1.11.3              |DONE      |Manifest: NOSIGNATURE
+		alexsmobs-1.18.6.jar                              |Alex's Mobs                   |alexsmobs                     |1.18.6              |DONE      |Manifest: NOSIGNATURE
+		artifacts-1.18.2-4.2.1.jar                        |Artifacts                     |artifacts                     |1.18.2-4.2.1        |DONE      |Manifest: NOSIGNATURE
+		SereneSeasons-1.18.2-7.0.0.15.jar                 |Serene Seasons                |sereneseasons                 |0.0NONE             |DONE      |Manifest: NOSIGNATURE
+		additional-guns-0.8.2-1.18.2.jar                  |Additional Guns               |additionalguns                |0.8.2               |DONE      |Manifest: NOSIGNATURE
+		pyromancer+1.8.1+1.18.2.jar                       |Pyromancer                    |pyromancer                    |1.8.1               |DONE      |Manifest: NOSIGNATURE
+		fire_extinguisher_1.18.2-1.9.0.jar                |Fire Extinguisher             |fire_extinguisher             |1.9.0               |DONE      |Manifest: NOSIGNATURE
+		sophisticatedbackpacks-1.18.2-3.18.43.802.jar     |Sophisticated Backpacks       |sophisticatedbackpacks        |1.18.2-3.18.43.802  |DONE      |Manifest: NOSIGNATURE
+		mcjtylib-1.18-6.0.20.jar                          |McJtyLib                      |mcjtylib                      |1.18-6.0.20         |DONE      |Manifest: NOSIGNATURE
+		rftoolsbase-1.18-3.0.12.jar                       |RFToolsBase                   |rftoolsbase                   |1.18-3.0.12         |DONE      |Manifest: NOSIGNATURE
+		mcw-doors-1.0.9forge-mc1.18.2.jar                 |Macaw's Doors                 |mcwdoors                      |1.0.9               |DONE      |Manifest: NOSIGNATURE
+		MekanismGenerators-1.18.2-10.2.5.465.jar          |Mekanism: Generators          |mekanismgenerators            |10.2.5              |DONE      |Manifest: NOSIGNATURE
+		CraftTweaker-forge-1.18.2-9.1.207.jar             |CraftTweaker                  |crafttweaker                  |9.1.207             |DONE      |Manifest: NOSIGNATURE
+		rubidium_extras-1.18.2_v1.3.2.jar                 |Rubidium Extras               |rubidium_extras               |1.18.2_v1.3.2       |DONE      |Manifest: NOSIGNATURE
+		cloth-config-6.4.90-forge.jar                     |Cloth Config v4 API           |cloth_config                  |6.4.90              |DONE      |Manifest: NOSIGNATURE
+		forge-1.18.2-40.2.2-universal.jar                 |Forge                         |forge                         |40.2.2              |DONE      |Manifest: 84:ce:76:e8:45:35:e4:0e:63:86:df:47:59:80:0f:67:6c:c1:5f:6e:5f:4d:b3:54:47:1a:9f:7f:ed:5e:f2:90
+		BloodMagic-1.18.2-3.2.6-41.jar                    |Blood Magic                   |bloodmagic                    |1.18.2-3.2.6-41     |DONE      |Manifest: NOSIGNATURE
+		twilightforest-1.18.2-4.1.1494-universal.jar      |The Twilight Forest           |twilightforest                |4.1.1494            |DONE      |Manifest: NOSIGNATURE
+		tl_skin_cape_forge_1.18_1.18.2-1.25.jar           |TLSkinCape                    |tlskincape                    |1.25                |DONE      |Manifest: 19:f5:ce:44:81:0c:e4:22:05:5e:73:c5:a8:cd:de:f3:c8:cf:a9:b3:01:70:40:a0:ee:2d:50:7a:1c:3d:1c:8a
+		konkrete_forge_1.6.0_MC_1.18-1.18.2.jar           |Konkrete                      |konkrete                      |1.6.0               |DONE      |Manifest: NOSIGNATURE
+		selene-1.18.2-1.17.9.jar                          |Selene                        |selene                        |1.18.2-1.17.9       |DONE      |Manifest: NOSIGNATURE
+		supplementaries-1.18.2-1.5.16.jar                 |Supplementaries               |supplementaries               |1.18.2-1.5.16       |DONE      |Manifest: NOSIGNATURE
+		out_of_sight-1.18.2-1.0.2.jar                     |Out of Sight                  |out_of_sight                  |1.18.2-1.0.2        |DONE      |Manifest: NOSIGNATURE
+		client-1.18.2-20220404.173914-srg.jar             |Minecraft                     |minecraft                     |1.18.2              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		TConstruct-1.18.2-3.6.3.111.jar                   |Tinkers' Construct            |tconstruct                    |3.6.3.111           |DONE      |Manifest: NOSIGNATURE
+		industrial-foregoing-1.18.2-3.3.1.6-10.jar        |Industrial Foregoing          |industrialforegoing           |3.3.1.6             |DONE      |Manifest: NOSIGNATURE
+		FarmersDelight-1.18.2-1.2.0.jar                   |Farmer's Delight              |farmersdelight                |1.18.2-1.2.0        |DONE      |Manifest: NOSIGNATURE
+		titanium-1.18.2-3.5.9-43.jar                      |Titanium                      |titanium                      |3.5.9               |DONE      |Manifest: NOSIGNATURE
+		supermartijn642corelib-1.1.7-forge-mc1.18.jar     |SuperMartijn642's Core Lib    |supermartijn642corelib        |1.1.7               |DONE      |Manifest: NOSIGNATURE
+		simplylight-1.18.2-1.4.5-build.43.jar             |Simply Light                  |simplylight                   |1.18.2-1.4.5-build.4|DONE      |Manifest: NOSIGNATURE
+		Botania-1.18.2-435.jar                            |Botania                       |botania                       |1.18.2-435          |DONE      |Manifest: NOSIGNATURE
+		rftoolsbuilder-1.18-4.1.1.jar                     |RFToolsBuilder                |rftoolsbuilder                |1.18-4.1.1          |DONE      |Manifest: NOSIGNATURE
+		flywheel-forge-1.18.2-0.6.8.a.jar                 |Flywheel                      |flywheel                      |0.6.8.a             |DONE      |Manifest: NOSIGNATURE
+		create-1.18.2-0.5.0.i.jar                         |Create                        |create                        |0.5.0.i             |DONE      |Manifest: NOSIGNATURE
+		curios-forge-1.18.2-5.0.9.0.jar                   |Curios API                    |curios                        |1.18.2-5.0.9.0      |DONE      |Manifest: NOSIGNATURE
+		Mekanism-1.18.2-10.2.5.465.jar                    |Mekanism                      |mekanism                      |10.2.5              |DONE      |Manifest: NOSIGNATURE
+		Patchouli-1.18.2-71.1.jar                         |Patchouli                     |patchouli                     |1.18.2-71.1         |DONE      |Manifest: NOSIGNATURE
+		Mantle-1.18.2-1.9.43.jar                          |Mantle                        |mantle                        |1.9.43              |DONE      |Manifest: NOSIGNATURE
+		Xaeros_Minimap_23.3.3_Forge_1.18.2.jar            |Xaero's Minimap               |xaerominimap                  |23.3.3              |DONE      |Manifest: NOSIGNATURE
+		oculus-1.5.2.jar                                  |Oculus                        |oculus                        |1.5.2               |DONE      |Manifest: NOSIGNATURE
+		collective-1.18.2-6.53.jar                        |Collective                    |collective                    |6.53                |DONE      |Manifest: NOSIGNATURE
+		markdown_manual-1.18.2-forge-1.2.1+59006bb.jar    |Markdown Manual               |markdown_manual               |1.2.1               |DONE      |Manifest: NOSIGNATURE
+		oc2-1.18.2-forge-0.0.0+569288c6.jar               |OpenComputers II              |oc2                           |0.0.0               |DONE      |Manifest: NOSIGNATURE
+		ClaimChunk-1.18-1.0.16.jar                        |Claim Chunk                   |cc                            |1.0.16              |DONE      |Manifest: NOSIGNATURE
+		cfm-7.0.0-pre35-1.18.2.jar                        |MrCrayfish's Furniture Mod    |cfm                           |7.0.0-pre35         |DONE      |Manifest: NOSIGNATURE
+		architectury-4.11.91-forge.jar                    |Architectury                  |architectury                  |4.11.91             |DONE      |Manifest: NOSIGNATURE
+		engineersdecor-1.18.2-1.1.28.jar                  |Engineer's Decor              |engineersdecor                |1.1.28              |DONE      |Manifest: bf:30:76:97:e4:58:41:61:2a:f4:30:d3:8f:4c:e3:71:1d:14:c4:a1:4e:85:36:e3:1d:aa:2f:cb:22:b0:04:9b
+		BetterF3-3.0.0-Forge-1.18.2.jar                   |BetterF3                      |betterf3                      |3.0.0               |DONE      |Manifest: NOSIGNATURE
+		framework-0.4.2-1.18.2.jar                        |Framework                     |framework                     |0.4.2               |DONE      |Manifest: NOSIGNATURE
+		expandability-6.0.0.jar                           |ExpandAbility                 |expandability                 |6.0.0               |DONE      |Manifest: NOSIGNATURE
+		Death-Chest-1.18.2-1.6.2a.jar                     |Death Chest                   |deathchest                    |1.6.2a              |DONE      |Manifest: NOSIGNATURE
+		createaddition-1.18.2-20230411a.jar               |Create Crafts & Additions     |createaddition                |1.18.2-20230411a    |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: ed92a5e5-6857-4f47-8e59-744f768ece79
+	FML: 40.2
+	Forge: net.minecraftforge:40.2.2
+	Flywheel Backend: GL33 Instanced Arrays

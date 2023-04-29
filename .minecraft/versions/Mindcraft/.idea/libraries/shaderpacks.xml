@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="shaderpacks">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/shaderpacks/ComplementaryReimagined_r2.1.zip!/" />
+      <root url="jar://$PROJECT_DIR$/shaderpacks/Tea_V1.5.7.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

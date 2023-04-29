@@ -1,0 +1,169 @@
+{
+  "activateSkinCapeForUserVersion": false,
+  "skipHashsumValidation": false,
+  "additionalFiles": [
+    {
+      "sha1": "2b8907919c1d51fda0b2ace0eba8a8b73855198f",
+      "size": 10909711,
+      "path": "libraries/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-slim.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-slim.jar"
+    },
+    {
+      "sha1": "a661c6a55a0600bd391bdbbd6827654c05b2109c",
+      "size": 6716693,
+      "path": "libraries/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-mappings.txt",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-mappings.txt"
+    },
+    {
+      "sha1": "52e1b15676c03b5e1b769f5bd7d89426e9807c89",
+      "size": 9349972,
+      "path": "libraries/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-extra.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-extra.jar"
+    },
+    {
+      "sha1": "c649df7e8dfbff5b8e571f5a37a0cb755119eb77",
+      "size": 16166247,
+      "path": "libraries/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-srg.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraft/client/1.18.2-20220404.173914/client-1.18.2-20220404.173914-srg.jar"
+    },
+    {
+      "sha1": "e4e1d6edd307cd69037be091ca3ad3101a783d45",
+      "size": 2558382,
+      "path": "libraries/net/minecraftforge/forge/1.18.2-40.2.2/forge-1.18.2-40.2.2-universal.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraftforge/forge/1.18.2-40.2.2/forge-1.18.2-40.2.2-universal.jar"
+    },
+    {
+      "sha1": "27576c5d382a5b9e61781ff07d147f40ee9d800a",
+      "size": 5129122,
+      "path": "libraries/net/minecraftforge/forge/1.18.2-40.2.2/forge-1.18.2-40.2.2-client.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraftforge/forge/1.18.2-40.2.2/forge-1.18.2-40.2.2-client.jar"
+    },
+    {
+      "sha1": "2af7397694b26828563a2bcdc339359f7db9e70f",
+      "size": 109983,
+      "path": "libraries/net/minecraftforge/fmlcore/1.18.2-40.2.2/fmlcore-1.18.2-40.2.2.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraftforge/fmlcore/1.18.2-40.2.2/fmlcore-1.18.2-40.2.2.jar"
+    },
+    {
+      "sha1": "ed44d30f09b4bbbd78d5a506946d3904f9528aaa",
+      "size": 16292,
+      "path": "libraries/net/minecraftforge/javafmllanguage/1.18.2-40.2.2/javafmllanguage-1.18.2-40.2.2.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraftforge/javafmllanguage/1.18.2-40.2.2/javafmllanguage-1.18.2-40.2.2.jar"
+    },
+    {
+      "sha1": "cd3224a434e8e8f6b4f823dfa34f4ac6c080fcda",
+      "size": 4987,
+      "path": "libraries/net/minecraftforge/mclanguage/1.18.2-40.2.2/mclanguage-1.18.2-40.2.2.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraftforge/mclanguage/1.18.2-40.2.2/mclanguage-1.18.2-40.2.2.jar"
+    },
+    {
+      "sha1": "4ecc99a00f1e4d31b6fccd8a4e0f813474571125",
+      "size": 7382,
+      "path": "libraries/net/minecraftforge/lowcodelanguage/1.18.2-40.2.2/lowcodelanguage-1.18.2-40.2.2.jar",
+      "url": "http://res.tlauncher.org/unb/libraries/cache/net/minecraftforge/lowcodelanguage/1.18.2-40.2.2/lowcodelanguage-1.18.2-40.2.2.jar"
+    }
+  ],
+  "tlauncherVersion": 0,
+  "modpack": {
+    "modpackMemory": false,
+    "memory": 0,
+    "id": -485780609351100,
+    "name": "Mindcraft",
+    "favorite": false,
+    "version": {
+      "mods": [
+        {
+          "stateGameElement": "active",
+          "id": 10000020,
+          "name": "TL skin and cape",
+          "author": "tlauncher.org",
+          "uuid": "cd3ef9ea-62dd-11e6-b39e-002590a1379b",
+          "linkProject": "https://tlauncher.org",
+          "favorite": false,
+          "categories": [],
+          "picture": 73988,
+          "pictures": [
+            73989,
+            73990
+          ],
+          "lanName": "tl-skin-and-cape",
+          "version": {
+            "id": 11001986,
+            "name": "1.22",
+            "updateDate": 1648642290000,
+            "type": "release",
+            "gameVersionsDTO": [
+              {
+                "id": 33,
+                "name": "1.18"
+              },
+              {
+                "id": 34,
+                "name": "1.18.1"
+              },
+              {
+                "id": 35,
+                "name": "1.18.2"
+              }
+            ],
+            "metadata": {
+              "sha1": "6715eb1da16028042609d2f8fb03d637ce4dc546",
+              "size": 536720,
+              "path": "mods/tl_skin_cape_forge_1.18_1.18.2-1.25.jar",
+              "url": "/mods/10000020/11001986/tl_skin_cape_forge_1.18_1.18.2-1.25.jar"
+            },
+            "available": false,
+            "minecraftVersionTypes": [
+              {
+                "id": 1,
+                "name": "forge"
+              }
+            ]
+          },
+          "downloadMonth": 332992,
+          "userInstall": false,
+          "populateStatus": false,
+          "dependencies": [],
+          "lastGameVersion": {
+            "id": 44,
+            "name": "1.19.4"
+          },
+          "updated": 1681300310000,
+          "update": 1681300310000,
+          "downloadALL": 145136569,
+          "available": true,
+          "parser": false,
+          "totalComments": 0
+        }
+      ],
+      "resourcePacks": [],
+      "maps": [],
+      "shaderpacks": [],
+      "gameVersionDTO": {
+        "id": 35,
+        "name": "1.18.2"
+      },
+      "minecraftVersionName": {
+        "id": 3459,
+        "name": "40.2.2"
+      },
+      "id": -485780609592201,
+      "name": "1.0",
+      "available": false,
+      "minecraftVersionTypes": [
+        {
+          "id": 1,
+          "name": "forge"
+        }
+      ]
+    },
+    "userInstall": false,
+    "populateStatus": false,
+    "available": false,
+    "parser": false,
+    "totalComments": 0
+  },
+  "source": "local_version_repo",
+  "jar": "1.18.2",
+  "skinVersion": true
+}
