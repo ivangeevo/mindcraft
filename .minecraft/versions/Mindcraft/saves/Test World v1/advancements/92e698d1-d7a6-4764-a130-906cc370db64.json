@@ -269,6 +269,12 @@
     },
     "done": true
   },
+  "cgm:recipes/cgm/advanced_bullet": {
+    "criteria": {
+      "has_gunpowder": "2023-05-02 16:13:20 +0300"
+    },
+    "done": true
+  },
   "farmersdelight:recipes/farmersdelight/rice_bag": {
     "criteria": {
       "has_rice": "2023-04-28 19:59:21 +0300"
@@ -326,6 +332,12 @@
   "additionalguns:recipes/additionalguns/muzzle_brake": {
     "criteria": {
       "has_iron_nugget": "2023-04-28 21:05:34 +0300"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/firework_rocket_simple": {
+    "criteria": {
+      "has_gunpowder": "2023-05-02 16:13:20 +0300"
     },
     "done": true
   },
@@ -593,6 +605,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2023-05-02 16:13:20 +0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/smooth_sandstone": {
     "criteria": {
       "has_sandstone": "2023-04-28 21:06:11 +0300"
@@ -602,6 +620,12 @@
   "cgm:recipes/cgm/light_stock": {
     "criteria": {
       "has_iron_ingot": "2023-04-28 21:05:34 +0300"
+    },
+    "done": true
+  },
+  "additionalguns:recipes/additionalguns/bullet_heavy": {
+    "criteria": {
+      "has_gunpowder": "2023-05-02 16:13:20 +0300"
     },
     "done": true
   },
@@ -635,6 +659,12 @@
     },
     "done": true
   },
+  "additionalguns:recipes/additionalguns/bullet_medium": {
+    "criteria": {
+      "has_gunpowder": "2023-05-02 16:13:20 +0300"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/dark_oak_mail_box": {
     "criteria": {
       "has_chest": "2023-04-28 21:36:08 +0300"
@@ -650,6 +680,12 @@
   "additionalguns:recipes/additionalguns/aks74u": {
     "criteria": {
       "has_planks": "2023-04-28 18:24:42 +0300"
+    },
+    "done": true
+  },
+  "additionalguns:recipes/additionalguns/bullet_long": {
+    "criteria": {
+      "has_gunpowder": "2023-05-02 16:13:20 +0300"
     },
     "done": true
   },
@@ -1015,6 +1051,12 @@
     },
     "done": true
   },
+  "supplementaries:adventure/way_sign": {
+    "criteria": {
+      "way_sign": "2023-05-02 16:21:06 +0300"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/stripped_warped_kitchen_drawer": {
     "criteria": {
       "has_chest": "2023-04-28 21:36:08 +0300"
@@ -1285,6 +1327,12 @@
     },
     "done": true
   },
+  "cgm:recipes/cgm/basic_bullet": {
+    "criteria": {
+      "has_gunpowder": "2023-05-02 16:13:20 +0300"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/purple_kitchen_drawer": {
     "criteria": {
       "has_terracotta": "2023-04-28 21:32:29 +0300"
@@ -1339,6 +1387,12 @@
     },
     "done": true
   },
+  "additionalguns:recipes/additionalguns/bullet_short": {
+    "criteria": {
+      "has_gunpowder": "2023-05-02 16:13:20 +0300"
+    },
+    "done": true
+  },
   "minecraft:recipes/food/cooked_rabbit_from_grill_cooking": {
     "criteria": {
       "has_rabbit": "2023-04-28 19:52:21 +0300"
@@ -1384,6 +1438,12 @@
   "minecraft:recipes/redstone/dropper": {
     "criteria": {
       "has_redstone": "2023-04-28 22:03:57 +0300"
+    },
+    "done": true
+  },
+  "cgm:recipes/cgm/shell": {
+    "criteria": {
+      "has_gunpowder": "2023-05-02 16:13:20 +0300"
     },
     "done": true
   },
@@ -1783,6 +1843,12 @@
     },
     "done": true
   },
+  "additionalguns:recipes/additionalguns/bullet_small": {
+    "criteria": {
+      "has_gunpowder": "2023-05-02 16:13:20 +0300"
+    },
+    "done": true
+  },
   "cfm:recipes/cfm/stripped_acacia_kitchen_drawer": {
     "criteria": {
       "has_chest": "2023-04-28 21:36:08 +0300"
@@ -1834,6 +1900,12 @@
   "cfm:recipes/cfm/birch_kitchen_drawer": {
     "criteria": {
       "has_chest": "2023-04-28 21:36:08 +0300"
+    },
+    "done": true
+  },
+  "additionalguns:recipes/additionalguns/bullet_special": {
+    "criteria": {
+      "has_gunpowder": "2023-05-02 16:13:20 +0300"
     },
     "done": true
   },
